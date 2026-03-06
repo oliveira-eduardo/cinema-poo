@@ -1,10 +1,21 @@
 public class Bilhete {
-    private Usuario usuario; // Nome e Cpf 
-    private Filme filme; //Nome do filme
-    private Sessao sessao;
-    private Sala sala; 
-    private Compra compra; // Valor e cadeira comprada
+    private String nome; 
+    private String cpf;
+    private String filme; 
+    private String sessao;
+    private String sala; 
+    private float  valor;
+    private String cadeiraComprada; 
 
-        // na hora de chamar essa classes tá dando erro, vai ser necessário trocar em vez de objetos.
+    public Bilhete(Usuario usuario,Filme filme, Sessao sessao, Sala sala, Compra compra){
+        this.nome = usuario.getUser();
+        this.cpf = usuario.getCpf();
+        this.filme = filme.getNome();
+        this.sessao = sessao.getSessao(); //não sei os nomes dos atributos que vão ser na sessão, sala e compra
+        this.sala = sala.getSala();
+        this.valor = compra.getValor();
+        this.cadeiraComprada = compra.getCadeira();
+
+    }
 }
 

@@ -4,6 +4,12 @@ public class Filme {
     private String sinopse;
     private String valor;
     
+    public Filme(String nome, String duracao, String sinopse, String valor) {
+        this.nome = nome;
+        this.duracao = duracao;
+        this.sinopse = sinopse;
+        this.valor = valor;
+    }
     public String getNome() {
         return nome;
     }
@@ -20,11 +26,5 @@ public class Filme {
         return valor;
     }
 
-    public Filme(String nome, String duracao, String sinopse, String valor) {
-        this.nome = nome;
-        this.duracao = duracao;
-        this.sinopse = sinopse;
-        this.valor = valor;
-    }
     
 }

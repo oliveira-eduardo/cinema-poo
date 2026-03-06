@@ -9,6 +9,18 @@ public class Usuario {
     private String numero_do_cartao;
     private String codigo_verificador_do_cartao;
 
+    public Usuario(String user, String cpf, String senha, int idade, String sexo, String email, String nome_do_cartao, String numero_do_cartao, String codigo_verificador_do_cartao) {
+        this.user = user;
+        this.cpf = cpf;
+        this.senha = senha;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.email = email;
+        this.nome_do_cartao = nome_do_cartao;
+        this.numero_do_cartao = numero_do_cartao;
+        this.codigo_verificador_do_cartao = codigo_verificador_do_cartao;
+    }
+
     public void setUser(String user) {
         this.user = user;
     }
@@ -80,17 +92,11 @@ public class Usuario {
     public String getCodigo_verificador_do_cartao() {
         return codigo_verificador_do_cartao;
     }
-
-    public Usuario(String user, String cpf, String senha, int idade, String sexo, String email, String nome_do_cartao, String numero_do_cartao, String codigo_verificador_do_cartao) {
-        this.user = user;
-        this.cpf = cpf;
-        this.senha = senha;
-        this.idade = idade;
-        this.sexo = sexo;
-        this.email = email;
-        this.nome_do_cartao = nome_do_cartao;
-        this.numero_do_cartao = numero_do_cartao;
-        this.codigo_verificador_do_cartao = codigo_verificador_do_cartao;
+ 
+    @Override
+    public String toString(){
+        return "nome: " + getUser() + " cpf: " + getCpf() + " senha: " + getSenha() + " idade: " + getIdade()
+        + " sexo: " + getSexo() + " email: " + getEmail() + " nome no cartão: " + getNome_do_cartao() + " numero no cartao: " + getNumero_do_cartao()
+        + " codigo do cartao: " + getCodigo_verificador_do_cartao();
     }
-    
 }
