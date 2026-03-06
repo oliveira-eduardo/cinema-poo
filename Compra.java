@@ -1,7 +1,11 @@
+import java.security.PublicKey;
+
 public class Compra {
     enum Produtos {
-        pipoca,
-        refrigerante,
-        chocolate;
+        PIPOCA,
+        REFRIGERANTE,
+        CHOCOLATE;
+        JUJUBA;
+        
     }
 }
