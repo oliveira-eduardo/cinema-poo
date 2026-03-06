@@ -4,4 +4,7 @@ public class Bilhete {
     private Sessao sessao;
     private Sala sala; 
     private Compra compra; // Valor e cadeira comprada
+
+        // na hora de chamar essa classes tá dando erro, vai ser necessário trocar em vez de objetos.
 }
+
