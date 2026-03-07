@@ -95,7 +95,7 @@ public class Usuario {
         return codigo_verificador_do_cartao;
     }
 
-    public static void Cadastro(){
+    public static Usuario Cadastro(){
         String user;
         String cpf;
         int idade;
@@ -139,6 +139,8 @@ public class Usuario {
         Usuario usuario = new Usuario(user, cpf, senha, idade, sexo, email, nome_do_cartao, numero_do_cartao, codigo_verificador_do_cartao);
         System.out.println(usuario);
         entrada.close();
+
+        return usuario;
     }
 
     public static boolean isOnlyLetter(String nome){ 
