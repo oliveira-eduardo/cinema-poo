@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Digite seu nome de usuário:");
             user = entrada.nextLine();
 
-        }while(isOnlyLetter(user));
+        }while(!isOnlyLetter(user));
         do { 
             System.out.println("Digite seu os 11 digitos do seu CPF:");
             cpf = entrada.nextLine();            
