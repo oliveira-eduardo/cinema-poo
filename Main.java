@@ -3,7 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        
-        Usuario usuario = Cadastro();
+        //Usuario usuario = Cadastro();
+        Filme filme = new Filme("avengers","b","c","d");
+        Sessao cadeira = new Sessao(filme, "20:40");
+        cadeira.cadeirasDisponiveis();
+        Scanner leitor = new Scanner(System.in);
+        int x, y;
+        x = leitor.nextInt();
+        y = leitor.nextInt();
+        cadeira.escolhaCadeira(x, y);
+        cadeira.cadeirasDisponiveis();
 
     }
 

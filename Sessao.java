@@ -1,3 +1,5 @@
+
+
 public class Sessao {
     private int[][] cadeira = new int[10][15];
     private String horario;
@@ -32,6 +34,22 @@ public class Sessao {
         this.filme = filme;
     }
 
+    public void cadeirasDisponiveis(){ 
+        int [][]cadeirasDisponiveis = getCadeira();
+        for(int i = 0; i < 10; i++){
+            for(int j = 0; j<15; j++){
+                System.out.print(cadeira[i][j]+" ");
+            }
+            System.out.println("");
+        }
+    }
+    public void escolhaCadeira(int x,  int y){
+        int [][]cadeirasDisponiveis = getCadeira();
+        cadeirasDisponiveis[x][y] = 1;
+        setCadeira(cadeira);
+
+
+    }
     
 }  
     
